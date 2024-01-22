@@ -1,0 +1,6 @@
+rootProject.name = 'contents-market'
+include 'domain-modules'
+include 'application-modules'
+include 'domain-modules:news-domain'
+findProject(':domain-modules:news-domain')?.name = 'news-domain'
+
